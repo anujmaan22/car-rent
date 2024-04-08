@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+struct Car
+{
+    string company,model;
+    int year,rgno,rent;
+    bool rented;
+};
+void displayCar(Car car){
+    cout<< "company: "<<car.company<<endl;
+     cout<< "Model: "<<car.model<<endl;
+      cout<< "Year: "<<car.year<<endl;
+       cout<< "Registration No.: "<<car.rgno<<endl;
+        cout<< "Rent Rs: "<<car.rent<< "/day"<<endl;
+}
+int main()
+{
+    Car car1={"TOYOTA","fortuner",2024,123,15000, true};
+    Car car2={"MHINDRA","scorpio",2020,133,10000, false};
+    Car car3={"PORSCHE","open roof",2019,143,30000, true};
+    cout<< "~~~AVAILABLE CARS~~~"<<endl;
+    displayCar(car1);
+    cout<< "~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
+    displayCar(car2);
+    cout<< "****************************"<<endl;
+    displayCar(car3);
+
+return 0;
+}
